@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project-private xmlns="http://www.netbeans.org/ns/project-private/1">
+    <editor-bookmarks xmlns="http://www.netbeans.org/ns/editor-bookmarks/2" lastBookmarkId="0"/>
+    <open-files xmlns="http://www.netbeans.org/ns/projectui-open-files/2">
+        <group>
+            <file>file:/Z:/home/localhost/coffeSite/application/bootstrap.php</file>
+            <file>file:/Z:/home/localhost/coffeSite/js/site/site_sel_prod.js</file>
+            <file>file:/Z:/home/localhost/coffeSite/application/classes/Controller/Site/Getajax.php</file>
+            <file>file:/Z:/home/localhost/coffeSite/application/views/site/v_index.php</file>
+            <file>file:/Z:/home/localhost/coffeSite/application/classes/Controller/Admin/Index.php</file>
+            <file>file:/Z:/home/localhost/coffeSite/css/style_site.css</file>
+            <file>file:/Z:/home/localhost/coffeSite/application/classes/Controller/Site/Authorization.php</file>
+            <file>file:/Z:/home/localhost/coffeSite/application/classes/Model/Site/Getdata.php</file>
+            <file>file:/Z:/home/localhost/coffeSite/application/classes/Model/Admin/Getdata.php</file>
+            <file>file:/Z:/home/localhost/coffeSite/application/config/mysite.php</file>
+            <file>file:/Z:/home/localhost/coffeSite/application/classes/Controller/Site/Index.php</file>
+            <file>file:/Z:/home/localhost/coffeSite/application/config/database.php</file>
+        </group>
+    </open-files>
+</project-private>

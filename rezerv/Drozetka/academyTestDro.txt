@@ -1,0 +1,17 @@
+ 
+
+drozetka.zz.mu
+
+
+FTP сервер	ftp.drozetka.zz.mu 
+FTP IP		185.28.20.115
+FTP порт		21
+FTP пользователь	u321240247
+FTP пароль	kZro0f3Mvp
+ 
+Папка для загрузки файлов	public_html
+ 
+Рекомендуемые FTP клиенты	SmartFTP  или FileZilla 
+
+База данных создана. 
+Для пользователя u321240247_droze установлен пароль kZro0f3Mvp

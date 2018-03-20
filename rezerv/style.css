@@ -1,0 +1,74 @@
+@charset "utf-8";
+*{
+padding:0;
+margin:0;
+}
+
+input{
+width:170px;
+}
+
+html, body{
+height:100%;
+width:100%;
+background-color:#CCC;
+}
+
+#contaner{
+width:900px;
+margin:0 auto;
+background-color:#FFF;
+min-height:100%;
+position:relative;
+}
+
+#empty{
+height:40px;
+}
+
+
+*html #contaner{
+height:100%;
+}
+
+#footer{
+min-height:40px;
+margin: -40px auto 0;
+width:900px;
+position:relative;
+text-align:center;
+}
+
+#header{
+text-align:center;
+background-color:#B22222;
+}
+
+.login{
+padding:30px;
+border: 2px solid black;
+margin: 30px auto 0;
+background-color:#DCDCDC;
+font-size:14px;
+font-family:Verdana;
+
+}
+
+.login td{
+padding:5px;
+}
+
+.login th{
+padding:5px;
+}
+#button_f{
+  color: #fff; /* цвет текста */
+  text-decoration: none; /* убирать подчёркивание у ссылок */
+  user-select: none; /* убирать выделение текста */
+  background: #B22222; /* фон кнопки */
+  padding:5px; /* отступ от текста */
+  outline: none; /* убирать контур в Mozilla */
+  height:40px;
+  width:174px;
+} 
+

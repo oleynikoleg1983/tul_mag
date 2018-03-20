@@ -1,0 +1,142 @@
+CREATE DATABASE drozetka CHARACTER SET utf8 COLLATE utf8_general_ci;
+
+
+//CREATE TABLE pages
+//(
+//id      INT(10) AUTO_INCREMENT PRIMARY KEY,
+//name    VARCHAR(30),
+//title   VARCHAR(30),
+//content	TEXT	
+//);
+
+
+CREATE TABLE users
+(
+id INT(10) AUTO_INCREMENT PRIMARY KEY,
+id_delivery TINYINT(10),
+name    VARCHAR(30),
+last_name VARCHAR(30),
+email    VARCHAR(30),
+password    VARCHAR(40),
+phone VARCHAR(20),
+checkbox TINYINT(10),
+data_reg TIMESTAMP
+);
+
+
+
+//CREATE TABLE news
+//(
+//id INT(10) AUTO_INCREMENT PRIMARY KEY,
+//category VARCHAR(30),
+//name VARCHAR(50),
+//date_public DATE,
+//date_end_public DATE,
+//description TINYTEXT,
+//content TEXT
+//);
+
+04335-22-194
+
+CREATE TABLE category_goods
+(
+id INT(10) AUTO_INCREMENT PRIMARY KEY,
+parent_id INT(10),
+name_category VARCHAR(30)
+);
+
+
+
+CREATE TABLE product
+(
+id INT(10) AUTO_INCREMENT PRIMARY KEY,
+id_image INT(10),
+name VARCHAR(50),
+price DOUBLE(10,2),
+description TEXT
+);
+
+
+//CREATE TABLE delivery
+//(
+//id INT(10) AUTO_INCREMENT PRIMARY KEY,
+//city VARCHAR(30),
+//street VARCHAR(30),
+//house_number TINYINT(5),
+//flat_number TINYINT(5),
+//description TINYTEXT
+//);
+
+
+CREATE table images
+(
+id INT(10) AUTO_INCREMENT PRIMARY KEY,
+url VARCHAR(30)
+);
+
+
+CREATE TABLE admin
+(
+id INT(10) AUTO_INCREMENT PRIMARY KEY,
+login VARCHAR(50),
+password VARCHAR(50),
+email VARCHAR(50)
+);
+
+
+
+
+
+
+---------------------------------
+
+UPDATE product p SET id_image=(SELECT max(id) FROM images)                                 
+              WHERE p.id =(SELECT max(id) FROM product)
+
+
+UPDATE product SET id_image=(SELECT max(id) FROM images)                                 
+              WHERE id =(SELECT max(p2.id) FROM product p2)
+
+
+
+UPDATE product SET id_image=(SELECT max(id) FROM images) 
+
+
+UPDATE  kohana.product SET  id_image=26 WHERE  `product`.`id` =160;
+
+UPDATE product p SET p.id_image=(SELECT max(id) FROM images)                                 
+              WHERE p.id =LAST_INSERT_ID();
+
+
+
+
+
+
+UPDATE product p SET id_image=(SELECT max(id) FROM images)                                 
+              WHERE p.id=(SELECT id FROM product WHERE id=(SELECT MAX(id) FROM product))
+
+
+UPDATE product SET id_image=(SELECT DISTINCT  max(id) FROM images) WHERE 1
+
+
+UPDATE product p SET p.id_image=(SELECT DISTINCT  max(i.id) FROM images i)
+WHERE p.id=(SELECT DISTINCT MAX(id) FROM product)
+
+
+
+UPDATE product p SET p.id_image=(SELECT DISTINCT  max(i.id) FROM images i) WHERE p.id=165
+
+
+UPDATE product SET id_image=3 WHERE id = (SELECT TOP 1 id FROM product)
+
+
+SELECT p.id, i.url, p.name, p.price, p.description, c.name_category 
+                    FROM product p, category_goods c, images i 
+                            WHERE p.id_category=c.id
+                            AND p.id_image=i.id
+
+SELECT p.id, i.url, p.name, p.price, p.description
+FROM product p  
+LEFT JOIN images i ON p.id_image=i.id
+
+

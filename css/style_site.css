@@ -1,0 +1,418 @@
+@charset "utf-8";
+/* CSS DOCUMENT */
+*{
+padding:0;
+margin:0;
+}
+
+html, body{
+height:100%;
+width:100%;
+}
+
+#contaner{
+width:900px;
+top: -20px;
+margin:0 auto;
+background-color:#FFF;
+min-height:100%;
+position:relative;
+}
+
+#html #contaner{
+height:100%;    
+}
+
+
+
+#empty{
+height:50px;    
+}
+
+
+
+.catigories{
+margin:1px 1px;
+font-size: 15px;
+color: white;
+background: #2980B9;
+width:130px;
+height:30px;
+cursor:pointer;
+appearance: none;
+-webkit-appearance: none;
+-moz-appearance: none;
+overflow: hidden;
+font: 13px Georgia, 'Times New Roman', Times serif;
+}
+
+#button_f{
+margin:1px 1px;
+font-size: 15px;
+color: white;
+background: #2980B9;
+width:130px;
+height:30px;
+cursor:pointer;   
+}
+
+
+
+.login{
+color: white;
+padding:30px;
+border: 2px solid #6495ED;
+margin: 30px auto 0;
+width:250px;
+background-color: #8c9da9;
+font-size:14px;
+font-family:Verdana;
+}
+
+.login input{
+width:130px;  
+}
+
+#button_aut{
+   
+}
+
+#button_back a{
+border: 2px solid #2980B9;
+text-decoration: none;
+margin:5px 5px;
+font-size: 15px;
+color: white;
+background: #2980B9;
+cursor:pointer;   
+}
+
+#site_basket{
+border: 1px solid aliceblue;
+font-size: 12px;
+position: absolute;
+left:551px;
+top:60px;
+margin: 0px 1px;
+background: #2980B9;
+width:216px;
+height:100px;
+text-align: left;
+color: white;  
+overflow:auto;
+white-space:nowrap;
+}
+
+#b_sel_product_basket{
+border: 2px solid aliceblue;
+text-decoration: none;
+margin:5px 5px;
+font-size: 14px;
+color: white;
+background: #2980B9;
+cursor:pointer;       
+}
+
+.prod_basket table {
+width: 100%;
+margin: 0 auto;
+border-collapse: separate;
+}
+
+.prod_basket table input{
+background:#2980B9;
+font-weight: bolder;
+border:white;
+color:white;
+}
+
+#filter{
+background-color:aliceblue;
+width: 550px; 
+height:100px;
+}
+
+#new_select_el{
+overflow-x:auto;
+white-space:nowrap;
+width: 100%;
+height:50px;
+}
+
+#show_pagination{
+margin:10px 3px 3px 3px;
+width:100%;
+float: left;
+margin-left:5px;
+}
+
+.elem_pagination{
+background:#2980B9;
+border: white;
+color:white;   
+cursor:pointer; 
+width:70px;
+}
+
+#find_ned_element{
+width:100%;
+font-size: 13px;
+height:50px;
+background:#2980B9; 
+color:white;
+}
+
+#find_ned_element  td{
+padding-left: 10px;    
+}
+
+.find_elem_input{
+font-size: 12px;
+color: black;
+width:90px;
+height:15px;
+cursor:pointer;
+-webkit-appearance: none;
+-moz-appearance: none;
+appearance: none;
+}
+
+#find_elem_button{
+font-size: 15px;
+color: white;
+border: 2px solid aliceblue;
+background: #2980B9;
+width:70px;
+height:38px;
+cursor:pointer;
+-webkit-appearance: none;
+-moz-appearance: none;
+appearance: none;
+}
+
+#sel_sort_elem{
+font-size: 12px;
+color: white;
+border: 1px solid aliceblue;
+background: #2980B9;
+width:120px;
+cursor:pointer;
+-webkit-appearance: none;
+-moz-appearance: none;
+appearance: none; 
+}
+
+#empty_product{
+float:left;
+margin-left: 4px;
+font-size: 15px;
+color:#2980B9;
+}
+
+#quantity_product{
+float:left;
+margin-left: 4px;
+width: 150px;
+font-size: 15px;
+color:#2980B9;
+}
+
+#img_empty_product{
+margin: 0 auto;
+width:200px;
+height:200px;
+}
+
+#show_product{
+padding-top: 2px;    
+}
+
+#sort_panel{
+float:left;
+margin-left:5px;    
+}
+
+
+.quantity{
+width:50px;
+background-color: aliceblue;
+color: #2980B9;
+text-align:center; 
+font-size: 15px;
+border: 0 solid black;
+}
+
+.quantity_sel{
+width:50px;
+color: #2980B9;
+text-align:center; 
+font-size: 15px;
+border: 1px solid #2980B9;  
+}
+
+.v_goods{
+font: 13px 'Times New Roman', Times serif;
+border-radius: 5px;
+color: #2980B9;
+margin:2px auto;
+background: aliceblue;
+width:520px;
+height:120px; 
+border: 1px solid #DC143C; 
+}
+
+.img_v_goods{
+width:144px;
+height:100px;  
+position:relative;
+}
+
+.product_code{
+font-size: 12px;
+}
+
+.inp_data_show_prod{
+color: #DC143C;
+background-color:aliceblue;
+margin-right: 3px;
+}
+
+.sell_tov{
+color: white;
+background-color: #2980B9;
+text-align:center; 
+font-size: 15px;
+border-radius: 5px;
+cursor: pointer;
+border: 2px solid #2980B9;
+}
+
+.adv_div_img{
+margin-top: 5px;
+margin-left: 5px;
+float:left;
+width:144px;
+height:100px;
+}
+
+.adv_div_inf{
+margin-left: 5px;
+margin-top: 5px;
+float:left;
+width:205px;
+height:100px; 
+}
+
+.adv_div_description{
+margin-left: 5px;
+margin-top: 5px;
+float:left;
+width:150px;
+height:100px; 
+overflow:auto;
+overflow-wrap:break-word;
+}
+
+#inform_pole{
+height: 130px;
+border-radius: 5px;
+color: #2980B9;
+margin:2px auto;
+background: aliceblue;
+width:520px;
+border: 2px solid #2980B9;
+}
+
+#footer{    
+min-height:50px;
+margin: -50px auto 0;
+width:900px;
+position:relative;
+text-align:center;
+background: #49bdae;
+background-size: 100% 100%;
+-webkit-background-size: 100% 100%;
+-moz-background-size: 100% 100%;
+-o-background-size: 100% 100%;
+-khtml-background-size:100% 100%;
+}
+
+#header{
+position: relative;
+height: 70px;
+text-align: center;
+background: #49bdae;
+color: white;
+/* background: url(/s_img/header.jpg) repeat-x left; */
+background-size: 100% 100%;
+-webkit-background-size: 100% 100%;
+-moz-background-size: 100% 100%;
+-o-background-size: 100% 100%;
+-khtml-background-size: 100% 100%;
+}
+
+.autoriset_in_mag{
+    top: 0px;
+    padding: 5px;
+    position: absolute;
+    background: #248c7e;
+    color: #f2dede;
+    font-size: 18px;
+}
+
+.a_autoriset_in_mag{
+    color: white;
+}
+
+.sell-menu-coffe{
+    margin-left: 20px;
+    margin-top: 50px;
+    background: #a2c2de;
+    height: 300px;
+    /* color: red; */
+    border: 2px solid #f1f6fb;
+    border-radius: 15px;
+    position: fixed;
+    width: 80%;
+}
+
+.sell-coffe-btn{
+    margin-top: 10px;
+    margin-left: 10px;
+}
+
+.sell-coffe-btn-add{
+    margin-top: 10px;
+    width:100px;
+    margin-left: 10px; 
+}
+
+.sell-count-element{
+    font-size: 22px;
+    margin-left: 15px;
+    text-align: center;
+    width: 122px;
+    height: 81px;
+    margin-top: 10px;
+}
+
+.report-inf-class-user{
+    position: fixed;
+    top: 0px;
+    font-size: 24px;
+    background: #f0ad4e;
+    width: 650px;
+    left: 25%;
+}
+
+#calculator{
+    position: absolute;
+    top: 0px;
+    left: 800px;
+    border: 1px solid white;
+    text-align: center;
+    font-size: 23px;
+    color: white;
+    border-radius: 5px;
+    font-weight: bold;
+}

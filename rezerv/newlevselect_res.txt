@@ -1,0 +1,61 @@
+function   new_lev_select(selected_type_lev1){
+     
+     var req = getXmlHttp();
+     req.onreadystatechange = function(){
+         if(req.readyState ==4)
+         {
+            if(req.status==200)
+            {            
+            var json =JSON.parse(req.responseText);     
+            if(json.length>0)
+                {
+                var div_sel1 = document.getElementById("div_sel1");
+                var selectList  = document.createElement("SELECT");  
+                selectList.id=selected_type_lev1;
+                div_sel1.appendChild(selectList);
+               
+                var thispos = document.getElementById(selected_type_lev1); 
+                if(thispos)
+                {
+                   var a = thispos.previousSibling.value;
+                  
+                   var b = json[0]['parent_id'];
+                   if(a==undefined)
+                      {
+                      a=b;
+                      }
+                   console.log("pr val = "+a);
+                   console.log("Parent id = "+b);
+                }
+                   if(a!=b)
+                        {
+                         console.log("DELL ALL");
+                         //перегрузить страницу
+                        }  
+                     else
+                        {
+                        selectList.onchange = getnewNextSelect;
+                        var option = document.createElement("option");
+                        option.value="";
+                        var text = document.createTextNode("ВЫБРАТЬ"); 
+                        option.appendChild(text);	
+                        selectList.appendChild(option);	
+
+                        for(var i=0; i<(json.length); i++)
+                            {
+                            var option = document.createElement("option");
+                            var text = document.createTextNode(json[i]['name_category']);
+                            option.appendChild(text);
+                            option.value= json[i]['id'];
+                            selectList.appendChild(option);
+                            }
+                        }
+                } 
+             }
+         }
+     }
+     req.open("GET", "http://kohana.localhost/admin/Getajax?selected_l1="+selected_type_lev1, true);
+     req.send(null);
+}
+   
+   
